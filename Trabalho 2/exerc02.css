@@ -1,0 +1,43 @@
+body{
+    font-family: Verdana;
+    font-size: 16px;
+    color: purple;
+    background-image: url(images.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: red;
+}
+
+#a1 {
+    color: blue;
+}
+
+.cor2 {
+    color: green;
+}
+
+h1 {
+    color: yellow;
+}
+
+h2 {
+    height: 150px;
+}
+
+h3 {
+    color: blue;
+    font-family: Arial;
+    font-size: 36px;
+}
+
+div {
+    background-color: orange;
+    width: 200px;
+    height: 100px;    
+}
+a {
+    text-decoration: none;
+}
