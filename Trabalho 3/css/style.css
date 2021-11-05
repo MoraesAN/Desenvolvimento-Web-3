@@ -1,0 +1,131 @@
+/* Folhas de Estilo do Site HTML e CSS */
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: Verdana, sans-serif;
+    color: #232323;
+}
+
+/* Classes em CSS */
+.container {
+    margin: auto;
+    width: 80%;
+    /* height: 800px; */
+}
+
+.banner {
+    height: 200px;
+    background-color: #539bee;
+}
+
+.banner > img {
+    width: 50%;
+    height: 100%;
+    margin-left: 22%;
+}
+
+.imagem{    
+    width: 400px;
+    height:400px;
+}
+
+
+.produto{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+}
+.informacao{
+    
+    font-size: medium;
+}
+.botoes{
+    width: auto;
+}
+
+
+.menu {
+    padding: 10px;
+    text-align: center;
+    color: #f9f9f9;
+    background-color: #383a42;
+    letter-spacing: 0.1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    /* TOP  RIGHT   BOTTOM  LEFT */
+    padding: 10px 25px;
+    color: #f9f9f9;
+    transition: 1s; /* 1000 ms (milissegundos) == 1 segundo */
+}
+
+.menu a:hover {
+    background-color: #161516;
+    transition: 0.9s;
+}
+
+.corpo {
+    min-height: 350px;
+    padding: 35px 75px;
+    text-align: justify;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #f5f5f5;
+
+}
+
+.rodape {
+    min-height: 150px;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 25px 0 50px 0;
+    color: #2c2b2b;
+    background-image: linear-gradient(to bottom, white, #232323);
+}
+
+.rodape a {
+    color: #2c2b2b;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color:  #af6f25;
+    transition: 0.5s;
+}
+
+.links {
+    width: 25%;
+    /* border: 1px solid yellow; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.conteudo {
+    width: 45%;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.redes-sociais {
+    width: 25%;
+    /* border: 1px solid red; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.redes-sociais img {
+    width: 32px;
+    vertical-align: middle;
+    padding: 0 10px 0 25px;
+}
