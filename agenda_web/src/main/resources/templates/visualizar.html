@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaSUS</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-content">
+                <div class="menu">
+                    <h3>Conecta <span class="cor-java">SUS</span></h3>
+                
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/cadastro_pessoa">Cadastrar pessoa</a></li>
+                        <li><a href="/cadastro_medico">Cadastrar medico</a></li>
+                        <li><a href="/cadastro_unidade">Cadastrar unidade</a></li>
+                        <li><a href="/consulta">Agendar Consulta</a></li>
+                        <li><a href="/contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="corpo">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            </div>
+
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+              </div>
+              
+              <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+        </div>
+
+        <div class="rodape">
+            <div class="rodape-content">
+                Sobre Nós 
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

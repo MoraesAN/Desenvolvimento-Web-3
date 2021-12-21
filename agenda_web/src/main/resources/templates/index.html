@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaSUS</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-content">
+                <div class="menu">
+                    <h3>Conecta <span class="cor-java">SUS</span></h3>
+                
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/cadastro_pessoa">Cadastrar pessoa</a></li>
+                        <li><a href="/cadastro_medico">Cadastrar medico</a></li>
+                        <li><a href="/cadastro_unidade">Cadastrar unidade</a></li>
+                     
+                        <li><a href="/contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="corpo">
+            <h1>Bem-vindo(a) </h1>
+
+            <p>Este site foi desenvolvido com intuito de ajudar pessoas a marcar suas consultas e exames no SUS (Sistema Unico de Saúde)</p>
+            
+
+            
+                <h1>Lista de Pessoas</h1>
+                
+                <p>
+                    <button onclick="location.href='/buscarPessoa'">Buscar</button>
+                </p>
+                
+                <div th:if="${ not#lists.isEmpty(pessoas)}">
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>CNS_SUS</th>
+                            <th>Ações</th>
+                        </tr>
+                        
+                        <tr th:each="pessoa:${pessoas}">
+                            <td th:text="${pessoa.id}">
+                            <td th:text="${pessoa.nome}">
+                            <td th:text="${pessoa.email}">
+                            <td th:text="${pessoa.cns_sus}">
+                            <td><a href="/editarPessoa"><img src="https://img.icons8.com/ios-glyphs/50/000000/edit.png"/></a>  
+                                <a href="/removerPessoa"><img src="https://img.icons8.com/ios/50/000000/delete--v1.png"/></a></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <h3 class="status" th:text="${resultado}"></h3>
+                
+
+                
+            
+        </div>
+
+        <div class="rodape">
+            <div class="rodape-content">
+                Sobre Nós 
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
